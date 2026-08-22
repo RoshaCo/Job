@@ -1,0 +1,3752 @@
+ <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>راهنمای جامع صدور شناسنامه | روشا</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+
+    --brown-dark:#56382b;
+    --brown-main:#6b4937;
+    --brown-medium:#80604d;
+    --brown-light:#a18470;
+
+    --cream:#f7f2ed;
+    --cream-light:#fbf9f7;
+    --cream-card:#fffdfb;
+
+    --text-dark:#30251f;
+    --text-medium:#66584f;
+
+    --border:#e5d9d0;
+
+}
+
+
+/* =========================
+   پایه
+   ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    direction:rtl;
+
+    font-family:'Vazirmatn',Tahoma,sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fbf9f7 0%,
+        #f5eee8 50%,
+        #faf7f4 100%
+    );
+
+    color:var(--text-dark);
+
+    line-height:2.15;
+
+    font-size:18px;
+
+}
+
+
+/* =========================
+   کانتینر
+   ========================= */
+
+.container{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:22px 15px 55px;
+
+}
+
+
+/* =========================
+   عنوان اصلی
+   ========================= */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:28px;
+
+}
+
+.hero h1{
+
+    font-size:2.35rem;
+
+    font-weight:700;
+
+    color:var(--brown-dark);
+
+    margin-bottom:14px;
+
+    line-height:1.7;
+
+}
+
+.hero p{
+
+    font-size:1.3rem;
+
+    color:var(--text-medium);
+
+    line-height:2;
+
+}
+
+
+/* =========================
+   کارت برند
+   ========================= */
+
+.brand-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:140px;
+
+    margin:30px auto;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(91,61,45,.94),
+        rgba(116,82,62,.90)
+    );
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    box-shadow:
+    0 18px 45px rgba(75,48,35,.20),
+    inset 0 0 25px rgba(255,255,255,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    position:relative;
+
+    color:white;
+
+}
+
+.brand-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150%;
+
+    height:60px;
+
+    top:0;
+
+    left:-25%;
+
+    background:rgba(255,255,255,.12);
+
+    transform:rotate(-10deg);
+
+}
+
+.brand-main{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:2.15rem;
+
+    font-weight:700;
+
+    opacity:0;
+
+    animation:brandText 10s ease forwards;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    max-width:90%;
+
+}
+
+@keyframes brandText{
+
+    0%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+/* =========================
+   کادرهای هشدار
+   ========================= */
+
+.warning{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(239,229,219,.90),
+        rgba(248,243,238,.95)
+    );
+
+    border:1px solid #d8c6b8;
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin:27px 0;
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    line-height:2.25;
+
+}
+
+.warning-icon{
+
+    font-size:2rem;
+
+    flex-shrink:0;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================
+   بخش‌های محتوایی
+   ========================= */
+
+.section{
+
+    background:rgba(255,253,251,.90);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-top:27px;
+
+    box-shadow:
+    0 12px 30px rgba(76,52,39,.07);
+
+    border:1px solid rgba(120,91,72,.08);
+
+}
+
+.section h2{
+
+    color:var(--brown-dark);
+
+    font-size:1.7rem;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+}
+
+.content-text{
+
+    color:#382d27;
+
+    font-size:1.2rem;
+
+    line-height:2.5;
+
+    text-align:right;
+
+}
+
+.content-text h3{
+
+    color:var(--brown-dark);
+
+    font-size:1.35rem;
+
+    margin:30px 0 14px;
+
+    font-weight:700;
+
+    line-height:2;
+
+}
+
+
+/* =========================
+   آکاردئون
+   ========================= */
+
+.accordion{
+
+    margin-top:28px;
+
+}
+
+.item{
+
+    background:rgba(255,253,251,.94);
+
+    border-radius:22px;
+
+    margin-bottom:17px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(100,73,57,.12);
+
+    box-shadow:0 7px 18px rgba(72,50,38,.04);
+
+}
+
+.question{
+
+    padding:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    gap:15px;
+
+    line-height:2;
+
+}
+
+.question span{
+
+    color:var(--brown-main);
+
+    font-size:2rem;
+
+    min-width:32px;
+
+    text-align:center;
+
+}
+
+.answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    padding:0 22px;
+
+    transition:.45s ease;
+
+    font-size:1.2rem;
+
+    line-height:2.6;
+
+    color:#40342d;
+
+}
+
+.item.active .answer{
+
+    max-height:15000px;
+
+    padding:0 22px 25px;
+
+}
+
+
+/* =========================
+   فرم
+   ========================= */
+
+.form-wrapper{
+
+    margin-top:30px;
+
+    background:rgba(255,253,251,.96);
+
+    border-radius:30px;
+
+    padding:28px;
+
+    box-shadow:0 15px 40px rgba(73,51,39,.09);
+
+    border:1px solid #e3d7ce;
+
+}
+
+.form-title{
+
+    text-align:center;
+
+    color:var(--brown-dark);
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    line-height:2;
+
+}
+
+.form-description{
+
+    text-align:center;
+
+    color:var(--text-medium);
+
+    font-size:1.15rem;
+
+    margin-bottom:28px;
+
+    line-height:2.2;
+
+}
+
+.form-section{
+
+    margin-top:30px;
+
+    padding-top:24px;
+
+    border-top:1px solid #eadfd7;
+
+}
+
+.form-section:first-of-type{
+
+    border-top:none;
+
+    margin-top:0;
+
+}
+
+.form-section-title{
+
+    color:var(--brown-dark);
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    line-height:2;
+
+}
+
+.form-group{
+
+    margin-bottom:23px;
+
+}
+
+.form-label{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    font-size:1.12rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    line-height:2;
+
+}
+
+.required{
+
+    color:#8a4e38;
+
+}
+
+.form-input,
+.form-textarea{
+
+    width:100%;
+
+    border:1px solid #d9cbc0;
+
+    background:#fffdfa;
+
+    border-radius:14px;
+
+    padding:15px 15px;
+
+    font-family:inherit;
+
+    font-size:1.12rem;
+
+    color:var(--text-dark);
+
+    outline:none;
+
+    transition:.2s ease;
+
+}
+
+.form-input:focus,
+.form-textarea:focus{
+
+    border-color:var(--brown-main);
+
+    box-shadow:0 0 0 3px rgba(107,73,55,.10);
+
+}
+
+.form-textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+    line-height:2.3;
+
+    font-size:1.15rem;
+
+}
+
+.help-text{
+
+    font-size:1.12rem;
+
+    color:#766960;
+
+    margin-top:8px;
+
+    line-height:2.2;
+
+}
+
+
+/* =========================
+   گزینه‌ها
+   ========================= */
+
+.options-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.option-label{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    border:1px solid #dfd2c9;
+
+    background:#fffdfa;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    transition:.2s ease;
+
+    font-size:1.05rem;
+
+    color:var(--text-dark);
+
+    line-height:1.9;
+
+}
+
+.option-label:hover{
+
+    border-color:var(--brown-light);
+
+    background:#faf5f0;
+
+}
+
+.option-label input{
+
+    position:absolute;
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+.custom-check{
+
+    width:23px;
+
+    height:23px;
+
+    border:2px solid #b9a79a;
+
+    border-radius:6px;
+
+    flex-shrink:0;
+
+    position:relative;
+
+    background:white;
+
+}
+
+.option-label.radio .custom-check{
+
+    border-radius:50%;
+
+}
+
+.option-label input:checked + .custom-check{
+
+    background:var(--brown-main);
+
+    border-color:var(--brown-main);
+
+}
+
+.option-label input:checked + .custom-check::after{
+
+    content:"✓";
+
+    position:absolute;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-55%);
+
+}
+
+.option-label.radio input:checked + .custom-check::after{
+
+    content:"";
+
+    width:9px;
+
+    height:9px;
+
+    border-radius:50%;
+
+    background:white;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+
+/* =========================
+   فیلدهای پویا
+   ========================= */
+
+.dynamic-field{
+
+    display:none;
+
+    margin-top:13px;
+
+}
+
+.dynamic-field.show{
+
+    display:block;
+
+}
+
+
+/* =========================
+   خطا
+   ========================= */
+
+.error-message{
+
+    display:none;
+
+    color:#8b3d2e;
+
+    background:#f9ece8;
+
+    border:1px solid #e8c8c0;
+
+    border-radius:12px;
+
+    padding:12px 13px;
+
+    margin-top:9px;
+
+    font-size:1rem;
+
+    line-height:2;
+
+}
+
+.error-message.show{
+
+    display:block;
+
+}
+
+
+/* =========================
+   دکمه ارسال واتساپی
+   ========================= */
+
+.submit-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:17px;
+
+    font-family:inherit;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:27px;
+
+    box-shadow:0 10px 25px rgba(37,211,102,.20);
+
+    transition:.2s ease;
+
+    line-height:2;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-1px);
+
+    background:#20bd5b;
+
+}
+
+
+/* =========================
+   شعار پایانی
+   ========================= */
+
+.slogan{
+
+    width:max-content;
+
+    max-width:95%;
+
+    white-space:nowrap;
+
+    margin:38px auto;
+
+    padding:14px 28px;
+
+    border-radius:20px;
+
+    background:rgba(107,73,55,.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(107,73,55,.20);
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+    color:var(--brown-dark);
+
+}
+
+
+/* =========================
+   موبایل
+   ========================= */
+
+@media(max-width:600px){
+
+    body{
+
+        font-size:17px;
+
+    }
+
+    .container{
+
+        padding:17px 12px 42px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+        line-height:1.8;
+
+    }
+
+    .hero p{
+
+        font-size:1.15rem;
+
+    }
+
+    .brand-card{
+
+        min-height:135px;
+
+    }
+
+    .brand-main{
+
+        font-size:1.9rem;
+
+        line-height:1.9;
+
+    }
+
+    .warning{
+
+        font-size:1.18rem;
+
+        line-height:2.35;
+
+        padding:18px;
+
+    }
+
+    .warning-icon{
+
+        font-size:1.8rem;
+
+    }
+
+    .section{
+
+        padding:20px;
+
+    }
+
+    .section h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .content-text{
+
+        font-size:1.13rem;
+
+        line-height:2.55;
+
+    }
+
+    .content-text h3{
+
+        font-size:1.27rem;
+
+    }
+
+    .question{
+
+        font-size:1.2rem;
+
+        padding:20px 17px;
+
+        line-height:2.15;
+
+    }
+
+    .answer{
+
+        font-size:1.13rem;
+
+        line-height:2.55;
+
+        padding:0 17px;
+
+    }
+
+    .item.active .answer{
+
+        padding:0 17px 22px;
+
+    }
+
+    .options-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .option-label{
+
+        font-size:1.02rem;
+
+        padding:14px;
+
+    }
+
+    .form-wrapper{
+
+        padding:19px;
+
+    }
+
+    .form-title{
+
+        font-size:1.48rem;
+
+    }
+
+    .form-description{
+
+        font-size:1.08rem;
+
+    }
+
+    .form-section-title{
+
+        font-size:1.23rem;
+
+    }
+
+    .form-label{
+
+        font-size:1.08rem;
+
+    }
+
+    .form-input,
+    .form-textarea{
+
+        font-size:1.08rem;
+
+    }
+
+    .help-text{
+
+        font-size:1.1rem;
+
+        line-height:2.3;
+
+    }
+
+    .form-textarea{
+
+        font-size:1.1rem;
+
+    }
+
+    .submit-btn{
+
+        font-size:1.13rem;
+
+    }
+
+    .slogan{
+
+        font-size:1.2rem;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+<!-- =========================
+     عنوان
+     ========================= -->
+
+<div class="hero">
+
+<h1>
+راهنمای جامع صدور شناسنامه
+</h1>
+
+<p>
+شرایط و ضوابط + مراحل + ارتباط با ما
+</p>
+
+</div>
+
+
+<!-- =========================
+     کارت برند
+     ========================= -->
+
+<div class="brand-card">
+
+<div class="brand-main">
+
+هر انسانی شایسته<br>
+داشتن هویت است
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     هشدار اول
+     ========================= -->
+
+<div class="warning">
+
+<div class="warning-icon">
+⚠️
+</div>
+
+<div>
+
+توجه فرمایید در صورتی که تلاش ما به صدور شناسنامه ختم نشود هیچگونه هزینه‌ای از شما دریافت نخواهد شد.
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     اطلاعیه مهم
+     ========================= -->
+
+<section class="section">
+
+<h2>
+اطلاعیه مهم
+</h2>
+
+<div class="content-text">
+
+<p>
+اتباع محترم، اگر به دنبال شناسنامه‌ای معتبر، واقعی و قابل استعلام هستید، لازم است بدانید که پایبندی به قانون، اصل اساسی فعالیت ماست. کلیه مسیرهایی که در ادامه به آن‌ها اشاره شده است، در چارچوب قوانین و مقررات جمهوری اسلامی ایران و ضوابط اداری مربوط به ثبت احوال دنبال می‌شوند و مسیرهای معرفی‌شده، واقعی، قانونی و قابل انجام هستند و تا کنون بسیاری از افراد بدین وسیله موفق به اخذ شناسنامه ایرانی شده‌اند.
+</p>
+
+<br>
+
+<p>
+ما در این مسیر، وعده‌های غیرواقعی یا راهکارهای صوری ارائه نمی‌کنیم؛ هدف ما، راهنمایی و همراهی متقاضی در مسیر صحیح تشکیل و پیگیری پرونده است.
+</p>
+
+<h3>
+راه‌های اخذ شناسنامه در ایران؛ از تولد تا بزرگسالی، قدم به قدم کنار شماییم
+</h3>
+
+<p>
+اگر به دنبال دریافت شناسنامه ایرانی هستید، چه برای نوزادی که تازه چشم به دنیا گشوده و چه برای خودتان که سال‌هاست آرزوی داشتن هویت ایرانی دارید، سه مسیر مشخص برای دریافت شناسنامه تعریف شده است.
+</p>
+
+<h3>
+مسیر اول؛ ثبت شناسنامه برای نوزادان و خردسالان
+</h3>
+
+<p>
+اگر پدر و مادر ایرانی هستند و فرزندشان در بیمارستان یا مراکز درمانی معتبر به دنیا آمده، ثبت شناسنامه نوزاد با ارائه گواهی تولد و مدارک شناسایی والدین و شهادت والدین انجام می‌شود.
+</p>
+
+<p>
+برای این مسیر، اصلاً نیازی به مراجعه به ما نیست و شما می‌توانید خودتان با مراجعه به اداره ثبت احوال یا دفاتر پیشخوان دولت، مراحل کار را ادامه دهید. بدیهی است که این مسیر شامل حال اتباع نخواهد بود.
+</p>
+
+<h3>
+مسیر دوم؛ فرزندان مادر ایرانی و پدر غیرایرانی
+</h3>
+
+<p>
+طبق قانونی که در سال‌های اخیر به تصویب مجلس شورای اسلامی رسیده، فرزندانی که مادر ایرانی و پدر غیرایرانی دارند، می‌توانند از طریق مادر برای دریافت شناسنامه ایرانی اقدام کنند.
+</p>
+
+<p>
+این مسیر ممکن است زمان‌بر باشد، اما با تنظیم یک پرونده دقیق و کامل، می‌توان روند آن را کوتاه‌تر کرد.
+</p>
+
+<h3>
+توجه
+</h3>
+
+<h3>
+مسیر سوم؛ بزرگسالانی که ادعای ایرانی بودن دارند
+</h3>
+
+<p>
+بسیاری از افراد بزرگسال، چه یک شهروند زاهدانی باشد، چه یک همتبار مشهدی، و یا از هر نقطه دیگری از این سرزمین، ممکن است به دلایل مختلف فاقد شناسنامه باشند.
+</p>
+
+<p>
+قانون برای این افراد نیز راهکار روشنی پیش‌بینی کرده است.
+</p>
+
+<p>
+فرض کنید فردی به اداره ثبت احوال مراجعه می‌کند و ادعا می‌کند که ایرانی‌تبار است.
+</p>
+
+<p>
+اولین اقدامی که کارشناسان از او می‌خواهند، ارائه گواهی تولد و همچنین حضور پدر و مادر برای شهادت دادن است؛ پدر و مادری که باید خودشان شناسنامه و کارت ملی ایرانی داشته باشند.
+</p>
+
+<p>
+اما اگر متقاضی ادعا کند که پدر و مادرش ایرانی بوده‌اند اما در قید حیات نیستند، قانون راه‌های دیگری را در نظر گرفته است.
+</p>
+
+<p>
+در زمان فقدان پدر و مادر، به جای شهادت والدین، می‌توان از استشهادنامه جمعی از معتمدین و مطلعین به عنوان سند هویتی استفاده کرد.
+</p>
+
+<p>
+نکته مهم اینجاست که طبق قانون، اداره ثبت احوال مرجع اول رسیدگی به چنین پرونده‌هایی است و اختیار تصمیم‌گیری و صدور شناسنامه را دارد.
+</p>
+
+<p>
+اما در عمل، معمولاً این پرونده‌ها به دادگاه ارجاع داده می‌شوند.
+</p>
+
+<p>
+اینجاست که نقش ما پررنگ می‌شود.
+</p>
+
+<p>
+ما با تشکیل یک پرونده قوی، منظم و کامل، در کنار شما هستیم تا کارشناس مربوطه بتواند بر اساس قوانین موجود، تصمیم درست را همانجا بگیرد.
+</p>
+
+<p>
+همه مدارکی که در این پرونده قرار می‌گیرد باید واقعی و معتبر باشد؛ گواهی زاد باید توسط بیمارستان معتبر با اطلاعات صحیح صادر شده باشد، استشهادیه باید دقیق و قانونی تنظیم شده باشد و یا مدارک پدر و مادری متوفی باید واقعی باشند.
+</p>
+
+<p>
+هیچ مدرک جعلی یا صوری در کار ما راه ندارد.
+</p>
+
+<h3>
+سخن آخر
+</h3>
+
+<p>
+آنچه خواندید، شرح ساده‌ای از مسیرهای قانونی دریافت شناسنامه بود.
+</p>
+
+<p>
+در عمل، این مسیر ظرافت‌ها و پیچیدگی‌های خاص خودش را دارد و نیازمند دانش تخصصی، پیگیری دقیق و تجربه کافی است.
+</p>
+
+<p>
+ما سعی کردیم این پیچیدگی‌ها را به زبان ساده برایتان توضیح دهیم.
+</p>
+
+<p>
+و اما مهم‌تر از همه اینکه:
+</p>
+
+<p>
+این کار شدنی است. قانون این حق را برای شما قائل شده و مسیر آن باز است.
+</p>
+
+<p>
+کافیست قدم اول را محکم بردارید. ما بقیه راه را با شما خواهیم آمد.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     سوالات متداول
+     ========================= -->
+
+<div class="accordion">
+
+
+<!-- سوال ۱ -->
+
+<div class="item">
+
+<div class="question">
+
+آیا داشتن کارت آمایش یا سایر مدارک اقامتی، مانع اقدام برای اثبات ایرانی‌تبار بودن و دریافت شناسنامه می‌شود؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 خیر؛ از این بابت نگران نباشید. داشتن مدارکی مانند کارت آمایش، سرشماری، اقامتی، وضعیتی و... به‌خودی‌خود مانع پیگیری موضوع تابعیت و هویت ایرانی شما نیست. این مدارک اصولاً در چارچوب وضعیت اقامتی افراد صادر می‌شوند و ماهیت آن‌ها با شناسنامه و مدارک هویتی ایرانی متفاوت است.
+</p>
+
+<br>
+
+<p>
+اگر شما مدعی هستید که پدر و مادر ایرانی داشته‌اید و به دلیل نداشتن مدارک کافی در گذشته نتوانسته‌اید ایرانی بودن خود را اثبات کنید، ما می‌توانیم در تشکیل و تکمیل پرونده، شناسایی و گردآوری مدارک و مستندات مربوط به والدین ایرانی متوفی شما، تهیه و تنظیم مدارک تکمیلی و استشهادیه و آماده‌سازی یک پرونده منسجم در کنار شما باشیم تا موضوع از مسیر قانونی پیگیری شود.
+</p>
+
+<br>
+
+<p>
+این فرآیند از نظر کلی، مشابه مسیر سوم است که در ابتدای این راهنما توضیح داده‌ایم؛ یعنی تمرکز اصلی بر جمع‌آوری مستندات، اثبات رابطه خانوادگی و ایرانی بودن والدین و ارائه مدارک لازم برای بررسی موضوع توسط مراجع ذی‌صلاح است. همچنین با دلایل قانونی مستحکم از اداره ثبت احوال تقاضا می‌کنیم از اختیارات قانونی خود جهت تأیید مدارک استفاده نماید و از ارجاع پرونده شما به مراجع قضایی اجتناب نماید و مطابق قانون اقدام به تأیید و صدور شناسنامه نماید. البته با توجه به شرایط هر فرد، ممکن است مدارک و مراحل موردنیاز متفاوت باشد.
+</p>
+
+<br>
+
+<p>
+بنابراین اگر در حال حاضر کارت آمایش، برگ سرشماری، مدرک اقامتی، وضعیت یا مدارک مشابه دارید، وجود این مدارک به‌تنهایی دلیل بر بسته بودن مسیر پیگیری نیست، زیرا به‌طور کلی ماهیت این نوع مدارک با شناسنامه بسیار متفاوت است و این مدارک موقتی هستند و در صورت عدم تمدید توسط شما، ابطال خواهد شد و سوابق به‌جامانده از آن نیز قابل ابطال است.
+</p>
+
+<br>
+
+<p>
+توجه فرمایید که در صورت صدور شناسنامه شما دیگر یک هویت جدید خواهید داشت و دیگر آن فرد سابق که دارای کارت موقتی آمایش بوده نیستید.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۲ -->
+
+<div class="item">
+
+<div class="question">
+
+هزینه خدمات و نحوه پرداخت به چه صورت است؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 هزینه ارائه خدمات ما، در صورت منجر شدن فرآیند به صدور شناسنامه توسط ثبت احوال، در حال حاضر مبلغ ۵۰ میلیون تومان است. بدیهی است در صورت تغییر این مبلغ، نرخ جدید از طریق همین وب‌سایت به متقاضیان جدید اعلام خواهد شد و شامل متقاضیان قبلی نخواهد بود.
+</p>
+
+<br>
+
+<p>
+برای رفاه متقاضیان، نحوه پرداخت انعطاف‌پذیر در نظر گرفته شده است. شما می‌توانید کل مبلغ را در ابتدای فرآیند و در قبال دریافت رسید رسمی و قابل پیگیری پرداخت نمایید.
+</p>
+
+<br>
+
+<p>
+چنانچه امکان پرداخت در ابتدای کار برای شما وجود نداشته باشد، می‌توانید تمام هزینه را پس از صدور شناسنامه، و اطمینان از اعتبار آن، طی سه قسط در مدت سه ماه پس از صدور شناسنامه پرداخت نمایید.
+</p>
+
+<br>
+
+<p>
+توجه: در صورت انتخاب روش پرداخت پس از صدور، متقاضی متعهد است، نسبت به پرداخت هزینه خدمات و تعیین تکلیف بدهی خود در مدت سه ماهه اقدام نماید. بدیهی است در صورت عدم پرداخت یا عدم تعیین تکلیف بدهی، پرونده از دستورکار خارج و ابطال خواهد شد.
+</p>
+
+<br>
+
+<p>
+بنابراین پیش از هر اقدامی ابتدا برای پرداخت هزینه‌ها برنامه‌ریزی نمایید.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۳ -->
+
+<div class="item">
+
+<div class="question">
+
+مدت زمان انجام فرآیند چقدر است؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 با توجه به تجربه پرونده‌های پیشین، متقاضیان لازم است مدت‌زمان تقریبی ۸ تا ۱۲ ماه را تا صدور شناسنامه در نظر بگیرند.
+</p>
+
+<br>
+
+<p>
+طولانی بودن این فرآیند معمولاً به دلایل زیر است:
+</p>
+
+<br>
+
+<p>
+<strong>۱. تشکیل و تکمیل پرونده:</strong><br>
+جمع‌آوری و تکمیل مدارک، بررسی مستندات و آماده‌سازی پرونده، یک فرآیند تخصصی و زمان‌بر باشد.
+</p>
+
+<br>
+
+<p>
+<strong>۲. نوبت و ترتیب رسیدگی:</strong><br>
+با توجه به تعداد پرونده‌های در حال پیگیری، ممکن است متقاضیان دیگری پیش از شما در نوبت بررسی و رسیدگی قرار داشته باشند، و ما نمی‌توانیم هر ماه برای تعداد زیادی متقاضی بزرگسال تشکیل پرونده بدهیم.
+</p>
+
+<br>
+
+<p>
+<strong>۳. فرآیندهای اداری توسط مراجع ذی‌صلاح زمان‌بر است:</strong><br>
+پس از تشکیل و تکمیل پرونده، بخش قابل‌توجهی از زمان در ثبت احوال و سایر دستگاه‌های مرتبط صرف خواهد شد. بررسی پرونده، استعلام‌ها و انجام مراحل اداری چندین ماه زمان می‌برد و مدت این بخش از فرآیند خارج از اختیار ماست.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۴ -->
+
+<div class="item">
+
+<div class="question">
+
+مراحل انجام کار به چه صورت است؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 فرآیند همکاری با ما طی چند مرحله مشخص و شفاف انجام می‌شود:
+</p>
+
+<br>
+
+<p>
+<strong>۱. بررسی اولیه شرایط شما</strong><br>
+در این مرحله، مدارک و اطلاعاتی که برای ما ارسال می‌کنید به‌صورت کامل بررسی می‌شود. این مرحله نیاز به پرداخت هزینه به ما ندارد.
+</p>
+
+<br>
+
+<p>
+<strong>۲. اعلام نتیجه بررسی</strong><br>
+پس از بررسی، به شما اعلام می‌شود که آیا شرایط لازم برای اقدام را دارید یا خیر. این تأیید از طرف ما به معنای قابل انجام بودن صدور شناسنامه برای شما بر اساس قوانین فعلی است.
+</p>
+
+<br>
+
+<p>
+<strong>۳. تصمیم‌گیری نهایی</strong><br>
+در صورت تأیید شرایط، این شما هستید که تصمیم نهایی را برای شروع همکاری می‌گیرید.
+</p>
+
+<br>
+
+<p>
+<strong>۴. تکمیل مدارک و تشکیل پرونده</strong><br>
+مدارک موردنیاز جمع‌آوری، دسته‌بندی و به صورت یک پرونده منظم و قوی آماده می‌شود.
+</p>
+
+<br>
+
+<p>
+<strong>۵. پیگیری‌های اداری</strong><br>
+تمام مراحل اداری، مکاتبات و پیگیری‌های لازم توسط کارگروه به‌نحوی انجام می‌شود تا کار به نتیجه برسد.
+</p>
+
+<br><br>
+
+<p>
+<strong>وظایف متقاضی</strong>
+</p>
+
+<br>
+
+<p>
+<strong>آیا نیاز به مراجعه حضوری دارم؟</strong><br>
+در بیشتر موارد، تنها یک یا دو مرتبه حضور شما در استان تهران لازم است. این حضور معمولاً برای انجام اموری مانند انگشت‌نگاری، عکس شناسنامه یا مواردی است که اداره ثبت احوال شخص متقاضی را ملزم به حضور کند.
+</p>
+
+<br>
+
+<p>
+<strong>آیا باید دائماً پیگیر کار باشم؟</strong><br>
+خیر. فرآیند به گونه‌ای طراحی شده که نیازی به پیگیری دائمی شما نیست. کارهای فنی و لجستیکی توسط افراد متخصص انجام می‌شود و شما تنها در موارد ضروری مطلع خواهید شد.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۵ -->
+
+<div class="item">
+
+<div class="question">
+
+آیا شناسنامه‌ای که از این مسیر دریافت می‌شود قانونی و معتبر است؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 بله؛ مجدداً تأکید می‌کنیم که پایبندی به قانون و ارائه مستندات واقعی، از اصول اساسی فعالیت ماست. تمامی مراحل پرونده در چارچوب قوانین و ضوابط جمهوری اسلامی ایران و مقررات مربوط به ثبت احوال دنبال می‌شود و هدف ما، طی کردن یک مسیر قانونی، شفاف و قابل استناد است.
+</p>
+
+<br>
+
+<p>
+ما به هیچ عنوان از مدارک جعلی، صوری یا ساختگی در پرونده استفاده نمی‌کنیم. برای مثال، اگر ارائه مدارک مربوط به والدین ایرانیِ متوفی در پرونده ضروری باشد، این مدارک باید مربوط به افراد واقعی و قابل استناد باشد. همچنین هرگونه گواهی، از جمله گواهی سکونت یا مدارک مربوط به تولد، باید از مرجع واقعی و معتبر صادر شده و قابلیت استعلام داشته باشد.
+</p>
+
+<br>
+
+<p>
+تمامی مدارک و مستندات پرونده باید به‌گونه‌ای باشد که در صورت بررسی قابل دفاع، قابل استناد باشد. ما اعتبار و سابقه کاری خود را به هیچ عنوان با استفاده از مدارک غیرواقعی یا روش‌های خارج از قانون به خطر نمی‌اندازیم.
+</p>
+
+<br>
+
+<p>
+در نهایت، صدور شناسنامه توسط مرجع قانونی انجام می‌شود و اعتبار آن نیز بر اساس ثبت و تأیید رسمی در نظام ثبت احوال خواهد بود. نقش ما در این فرآیند، راهنمایی، تشکیل و تکمیل پرونده و پیگیری آن از مسیر قانونی است؛ نه صدور شناسنامه یا ایجاد مدرک خارج از فرآیند رسمی.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۶ -->
+
+<div class="item">
+
+<div class="question">
+
+متقاضی ادعا دارد که من هیچ مدرکی از پدر و مادر ایرانی خود ندارم؛ آیا باز هم امکان پیگیری برای دریافت شناسنامه وجود دارد؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 نداشتن مدارک در ابتدای مسیر، لزوماً به معنای پایان راه نیست. اگر به دلیل فقدان والدین مدارک هویتی و مستندات مربوط به آن‌ها در اختیار شما نیست، ما می‌توانیم در مسیر شناسایی، جست‌وجو و گردآوری مدارک و سوابق قابل استناد مربوط به والدین شما و حتی پیگیری مدارک مربوط به احراز سکونت و یا گواهی تولد رسمی صادره از بیمارستان در کنار شما باشیم.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۷ -->
+
+<div class="item">
+
+<div class="question">
+
+به‌عنوان یک تبعه، نزد مراجع قضایی ایران دارای سوءسابقه هستم؛ آیا می‌توانم شناسنامه ایرانی دریافت کنم؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 در صورتی که فردی به‌عنوان تبعه، دارای سوءسابقه و ثبت هویت با انگشت‌نگاری نزد مراجع انتظامی و قضایی ایران باشد، متأسفانه امکان پذیرش و پیگیری پرونده از طریق ما برای وی وجود ندارد.
+</p>
+
+<br>
+
+<p>
+همچنین افرادی که دارای تذکره الکترونیکی صادرشده از کشور دیگر، سابقه پناهندگی یا پرونده و سوابق ثبت‌شده نزد سازمان‌های بین‌المللی مرتبط با پناهندگان هستند، به دلیل وجود سوابق هویتی و بین‌المللی، در چارچوب این خدمات قرار نمی‌گیرند و ما امکان پذیرش و پیگیری پرونده این افراد را نداریم.
+</p>
+
+<br>
+
+<p>
+با این حال، اگر درباره وضعیت خود تردید دارید یا تصور می‌کنید شرایط شما با موارد فوق متفاوت است، لازم است پیش از هر اقدام، وضعیت شما به‌صورت اختصاصی بررسی و پاسخ دقیق‌تری درباره امکان یا عدم امکان پیگیری ارائه شود.
+</p>
+
+<br>
+
+<p>
+توجه: این بررسی اولیه صرفاً برای تشخیص امکان پذیرش پرونده انجام می‌شود و به معنای تضمین نتیجه یا پذیرش قطعی پرونده نیست.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۸ -->
+
+<div class="item">
+
+<div class="question">
+
+پاسپورت دارم؛ آیا من هم می‌توانم برای دریافت شناسنامه ایرانی اقدام کنم؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 صرف داشتن گذرنامه، به‌تنهایی مانع اقدام نیست؛ اما شرایط هر فرد باید به‌صورت اختصاصی بررسی شود. صدور بسیاری از انواع پاسپورت معمولاً با ثبت اطلاعات هویتی و در برخی موارد انگشت‌نگاری همراه است؛ به همین دلیل، نوع پاسپورت و نحوه دریافت آن اهمیت دارد.
+</p>
+
+<br>
+
+<p>
+افرادی که پاسپورت سفید دارند و هنگام دریافت پاسپورت یا ورود و خروج، نزد مراجع مربوطه انگشت‌نگاری نشده‌اند، می‌توانند مانند سایر متقاضیان اقدام نمایند.
+</p>
+
+<br>
+
+<p>
+اما اگر برای دریافت پاسپورت، ورود و خروج یا امور مرتبط با آن، نزد پلیس، مراجع انتظامی یا وزارت امور خارجه انگشت‌نگاری و اطلاعات هویتی فردی ثبت شده باشد، لازم است پرونده به‌صورت جداگانه بررسی شود.
+</p>
+
+<br>
+
+<p>
+در این شرایط، کافی است تصویر پاسپورت و مدارک هویتی خود را برای ما ارسال کنید تا شرایط شما به‌صورت اختصاصی و رایگان بررسی شود و مشخص گردد که آیا امکان پذیرش و پیگیری پرونده شما از این مسیر وجود دارد یا خیر.
+</p>
+
+<br>
+
+<p>
+این بررسی اولیه صرفاً با هدف تشخیص امکان پذیرش پرونده انجام می‌شود و به معنای تضمین نتیجه نهایی نیست.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     سوال جدید — یکی مانده به آخر
+     ========================= -->
+
+<div class="item">
+
+<div class="question">
+
+شیوه ارتباط با ما چگونه باشد؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 لطفاً ارتباط خود را فقط از طریق واتساپ با ما برقرار کنید و از ارسال پیامهای پراکنده در اینستاگرام یا سایر پیامرسان ها خودداری نمایید.
+</p>
+
+<br>
+
+<p>
+🟤 تماس تلفنی بلامانع است اما به دلیل فعالیت در چند حوزه مختلف، ممکن است تماس تلفنی شما در ذهن نماند و نتوانیم با تمرکز کافی پاسخگوی شما باشیم. بنابراین بهترین راه، ارسال پیام متنی است؛ پیامهای شما به صورت منظم بازخوانی میشود و هیچ پیامی بی پاسخ نخواهد ماند.
+</p>
+
+<br>
+
+<p>
+🟤 ترافیک کاری ممکن است باعث تأخیر در پاسخگویی شود، اما این تأخیر هرگز به معنای نادیده گرفتن پیام شما نیست.
+ما ترجیح میدهیم به جای پاسخ سطحی، زمان کافی صرف کنیم تا پاسخی دقیق، و قانونمند و روشن به شما ارائه دهیم. همچنین ممکن است افرادی پیش از شما در نوبت پاسخگویی باشند. بنابراین ممکن است پیامها با تاخیرهای طولانی پاسخ داده شود اما مطمئن باشید بدون پاسخ نخواهد ماند.
+</p>
+
+<br>
+
+<p>
+🟤 به هیچ وجه ویسهای طولانی ارسال نکنید؛ مگر در موارد خاص و ضروری که چاره ای جز ارسال صدا نباشد.
+</p>
+
+<br>
+
+<p>
+🟤 درخواست یا صحبت خود را در یک پیام کامل و منسجم ارسال کنید و از ارسال پیامهای مکرر و تکراری بپرهیزید.
+</p>
+
+<br>
+
+<p>
+🟤 از مطرح کردن سوالاتی که پیشتر در همین راهنما پاسخ داده شده است، جداً خودداری نمایید.
+</p>
+
+<br>
+
+<p>
+🟤 اگر از شماره ما با شما تماسی برقرار شد و موفق به پاسخگویی نشدید، لطفاً مکرراً با آن شماره تماس نگیرید.
+در صورت نیاز، دوباره با شما تماس گرفته میشود یا از طریق پیامرسان اطلاع رسانی خواهد شد.
+</p>
+
+<br>
+
+<p>
+🟤 درصورت پذیرش درخواست شما، در این مسیر، مسئولیت شما بسیار محدود است.
+بیشتر امور به کارگروهی ویژه سپرده شده و نیازی به پیگیریهای روزانه یا هفتگی و ماهیانه شما ندارد. با آرامش زندگی خود را ادامه دهید؛ پیگیری کار بر عهده ماست.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال آخر -->
+
+<div class="item">
+
+<div class="question">
+
+درباره ما / ارتباط با ما
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🟤 <strong>ما که هستیم؟</strong>
+</p>
+
+<br>
+
+<p>
+مجموعه ما در قلب خود یک باور ساده اما جدی دارد: هیچ هم‌نوعی نباید به خاطر پیچیدگی‌های اداری از داشتن هویت و حق طبیعی خود محروم بماند.
+</p>
+
+<br>
+
+<p>
+من حمیدرضا سلیمی هستم؛ فارغ‌التحصیل رشته ارتباطات اجتماعی، فعال در حوزه روابط عمومی و مدیریت ارتباطات.
+</p>
+
+<br>
+
+<p>
+تجربه من در مدیریت پیج‌های اینستاگرام، تسهیل امور، برنامه‌ریزی و پاسخگویی به مخاطبین، به من این امکان را داده که در این مسیر حساس، نقشی دقیق، پیگیر و قابل اعتماد ایفا کنم.
+</p>
+
+<br>
+
+<p>
+در مسیر دریافت شناسنامه، من تنها راه ارتباطی شما با کارگروه هستم.
+</p>
+
+<br>
+
+<p>
+<strong>نحوه ارتباط با ما چگونه است؟</strong>
+</p>
+
+<br>
+
+<p>
+شماره تماس من در اختیار شما قرار گرفته است و ارتباط از طریق پیام‌رسان واتساپ ادامه می‌یابد.
+</p>
+
+<br>
+
+<p>
+در صورت احراز شرایط و تصمیم قطعی شما، امکان ملاقات حضوری فراهم است و به شما اطلاع رسانی خواهد شد.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     هشدار دوم — قبل از فرم
+     ========================= -->
+
+<div class="warning">
+
+<div class="warning-icon">
+⚠️
+</div>
+
+<div>
+
+اگر مطالب ذکر شده در این راهنما را بطور کامل مطالعه نموده اید لطفا ابتدا فیلترشکن خود را روشن نموده و سپس فرم زیر را جهت درخواست بررسی شرایط خود پر کرده سپس روی دکمه ثبت درخواست و ارسال بزنید. شما با یک پیام آماده وارد واتساپ میشوید و کافیست دکمه ارسال را در واتساب بزنید.
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     فرم
+     ========================= -->
+
+<div class="form-wrapper">
+
+<div class="form-title">
+فرم بررسی شرایط دریافت شناسنامه
+</div>
+
+<div class="form-description">
+لطفاً اطلاعات زیر را برای بررسی اولیه با دقت تکمیل کنید.
+</div>
+
+
+<form id="applicationForm" novalidate>
+
+
+<!-- اطلاعات فردی -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۱. اطلاعات فردی
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+نام <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="firstName"
+class="form-input"
+placeholder="نام خود را وارد کنید"
+required
+>
+
+<div id="firstNameError" class="error-message">
+لطفاً نام خود را وارد کنید.
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+نام خانوادگی <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="lastName"
+class="form-input"
+placeholder="نام خانوادگی خود را وارد کنید"
+required
+>
+
+<div id="lastNameError" class="error-message">
+لطفاً نام خانوادگی خود را وارد کنید.
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+سن <span class="required">*</span>
+</label>
+
+<input
+type="number"
+id="age"
+class="form-input"
+min="1"
+max="120"
+placeholder="سن"
+required
+>
+
+<div id="ageError" class="error-message">
+لطفاً سن خود را وارد کنید.
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+محل سکونت <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="city"
+class="form-input"
+placeholder="نام شهر"
+required
+>
+
+<div id="cityError" class="error-message">
+لطفاً شهر محل سکونت را وارد کنید.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- مدارک هویتی -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۲. مدارک هویتی
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+مدرک یا مدارک هویتی فعلی شما چیست؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid" id="currentDocuments">
+
+<label class="option-label">
+<input type="checkbox" value="کارت آمایش">
+<span class="custom-check"></span>
+کارت آمایش
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="اقامتی">
+<span class="custom-check"></span>
+اقامتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="وضعیتی">
+<span class="custom-check"></span>
+وضعیتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="سرشماری">
+<span class="custom-check"></span>
+سرشماری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="تذکره الکترونیک">
+<span class="custom-check"></span>
+تذکره الکترونیک
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت با انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت با انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت بدون انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت بدون انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="فاقد مدارک هویتی">
+<span class="custom-check"></span>
+فاقد مدارک هویتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پناهنده (سازمان ملل)">
+<span class="custom-check"></span>
+پناهنده (سازمان ملل)
+</label>
+
+<label class="option-label">
+<input type="checkbox"
+value="سایر"
+data-other="currentOther">
+<span class="custom-check"></span>
+سایر
+</label>
+
+</div>
+
+
+<div id="currentOther" class="dynamic-field">
+
+<input
+type="text"
+id="currentOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+در گذشته چه مدارک هویتی داشته‌اید که در حال حاضر باطل یا فاقد اعتبار شده‌اند؟
+</label>
+
+
+<div class="options-grid" id="previousDocuments">
+
+<label class="option-label">
+<input type="checkbox" value="کارت آمایش">
+<span class="custom-check"></span>
+کارت آمایش
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="اقامتی">
+<span class="custom-check"></span>
+اقامتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="وضعیتی">
+<span class="custom-check"></span>
+وضعیتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="سرشماری">
+<span class="custom-check"></span>
+سرشماری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="تذکره الکترونیک">
+<span class="custom-check"></span>
+تذکره الکترونیک
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت با انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت با انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت بدون انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت بدون انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="فاقد مدارک هویتی">
+<span class="custom-check"></span>
+فاقد مدارک هویتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پناهنده (سازمان ملل)">
+<span class="custom-check"></span>
+پناهنده (سازمان ملل)
+</label>
+
+<label class="option-label">
+<input type="checkbox"
+value="سایر"
+data-other="previousOther">
+<span class="custom-check"></span>
+سایر
+</label>
+
+</div>
+
+
+<div id="previousOther" class="dynamic-field">
+
+<input
+type="text"
+id="previousOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- وضعیت تأهل -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۳. وضعیت تأهل و خانواده
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+وضعیت تأهل شما چیست؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="maritalStatus"
+value="مجرد"
+required
+>
+
+<span class="custom-check"></span>
+
+مجرد
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="maritalStatus"
+value="متأهل"
+>
+
+<span class="custom-check"></span>
+
+متأهل
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="spouseSection" class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+مدارک هویتی همسر خود را انتخاب کنید.
+</label>
+
+
+<div class="options-grid" id="spouseDocuments">
+
+<label class="option-label">
+<input type="checkbox" value="کارت آمایش">
+<span class="custom-check"></span>
+کارت آمایش
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="اقامتی">
+<span class="custom-check"></span>
+اقامتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="وضعیتی">
+<span class="custom-check"></span>
+وضعیتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="سرشماری">
+<span class="custom-check"></span>
+سرشماری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="تذکره الکترونیک">
+<span class="custom-check"></span>
+تذکره الکترونیک
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت با انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت با انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت بدون انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت بدون انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="فاقد مدارک هویتی">
+<span class="custom-check"></span>
+فاقد مدارک هویتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پناهنده (سازمان ملل)">
+<span class="custom-check"></span>
+پناهنده (سازمان ملل)
+</label>
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سایر"
+data-other="spouseOther"
+>
+
+<span class="custom-check"></span>
+
+سایر
+
+</label>
+
+</div>
+
+
+<div id="spouseOther" class="dynamic-field">
+
+<input
+type="text"
+id="spouseOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- فرزندان -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۴. فرزندان
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+تعداد فرزندان شما چند نفر است؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenCount"
+value="فاقد فرزند"
+>
+
+<span class="custom-check"></span>
+
+فاقد فرزند
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenCount"
+value="یک"
+>
+
+<span class="custom-check"></span>
+
+یک
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenCount"
+value="دو"
+>
+
+<span class="custom-check"></span>
+
+دو
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenCount"
+value="سه"
+>
+
+<span class="custom-check"></span>
+
+سه
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenCount"
+value="بیشتر از سه"
+>
+
+<span class="custom-check"></span>
+
+بیشتر از سه
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="childrenDocumentsSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+آیا برای دریافت مدارک هویتی فرزندان اقدام شده است؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenDocuments"
+value="بله"
+>
+
+<span class="custom-check"></span>
+
+بله
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="childrenDocuments"
+value="خیر"
+>
+
+<span class="custom-check"></span>
+
+خیر
+
+</label>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- وضعیت پدر -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۵. وضعیت پدر
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+آیا پدر شما در قید حیات هستند؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="fatherAlive"
+value="بله"
+>
+
+<span class="custom-check"></span>
+
+بله
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="fatherAlive"
+value="خیر"
+>
+
+<span class="custom-check"></span>
+
+خیر
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="fatherIranSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+آیا پدر شما ساکن ایران هستند؟
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="fatherIran"
+value="بله"
+>
+
+<span class="custom-check"></span>
+
+بله
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="fatherIran"
+value="خیر"
+>
+
+<span class="custom-check"></span>
+
+خیر
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="fatherDocumentsSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+مدارک هویتی پدر خود را انتخاب کنید.
+</label>
+
+
+<div class="options-grid"
+id="fatherDocuments">
+
+<label class="option-label">
+<input type="checkbox" value="کارت آمایش">
+<span class="custom-check"></span>
+کارت آمایش
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="اقامتی">
+<span class="custom-check"></span>
+اقامتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="وضعیتی">
+<span class="custom-check"></span>
+وضعیتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="سرشماری">
+<span class="custom-check"></span>
+سرشماری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="تذکره الکترونیک">
+<span class="custom-check"></span>
+تذکره الکترونیک
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت با انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت با انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت بدون انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت بدون انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="فاقد مدارک هویتی">
+<span class="custom-check"></span>
+فاقد مدارک هویتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پناهنده (سازمان ملل)">
+<span class="custom-check"></span>
+پناهنده (سازمان ملل)
+</label>
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سایر"
+data-other="fatherOther"
+>
+
+<span class="custom-check"></span>
+
+سایر
+
+</label>
+
+</div>
+
+
+<div id="fatherOther"
+class="dynamic-field">
+
+<input
+type="text"
+id="fatherOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- وضعیت مادر -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۶. وضعیت مادر
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+آیا مادر شما در قید حیات هستند؟
+<span class="required">*</span>
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="motherAlive"
+value="بله"
+>
+
+<span class="custom-check"></span>
+
+بله
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="motherAlive"
+value="خیر"
+>
+
+<span class="custom-check"></span>
+
+خیر
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="motherIranSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+آیا مادر شما ساکن ایران هستند؟
+</label>
+
+
+<div class="options-grid">
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="motherIran"
+value="بله"
+>
+
+<span class="custom-check"></span>
+
+بله
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="motherIran"
+value="خیر"
+>
+
+<span class="custom-check"></span>
+
+خیر
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="motherDocumentsSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+مدارک هویتی مادر خود را انتخاب کنید.
+</label>
+
+
+<div class="options-grid"
+id="motherDocuments">
+
+<label class="option-label">
+<input type="checkbox" value="کارت آمایش">
+<span class="custom-check"></span>
+کارت آمایش
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="اقامتی">
+<span class="custom-check"></span>
+اقامتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="وضعیتی">
+<span class="custom-check"></span>
+وضعیتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="سرشماری">
+<span class="custom-check"></span>
+سرشماری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="تذکره الکترونیک">
+<span class="custom-check"></span>
+تذکره الکترونیک
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت با انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت با انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پاسپورت بدون انگشت‌نگاری">
+<span class="custom-check"></span>
+پاسپورت بدون انگشت‌نگاری
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="فاقد مدارک هویتی">
+<span class="custom-check"></span>
+فاقد مدارک هویتی
+</label>
+
+<label class="option-label">
+<input type="checkbox" value="پناهنده (سازمان ملل)">
+<span class="custom-check"></span>
+پناهنده (سازمان ملل)
+</label>
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سایر"
+data-other="motherOther"
+>
+
+<span class="custom-check"></span>
+
+سایر
+
+</label>
+
+</div>
+
+
+<div id="motherOther"
+class="dynamic-field">
+
+<input
+type="text"
+id="motherOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- توضیحات تکمیلی -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۷. توضیحات تکمیلی
+</div>
+
+<div class="form-group">
+
+<div class="help-text">
+
+در صورت لزوم، می‌توانید وضعیت خود و مواردی را که تصور می‌کنید برای بررسی شرایط شما اهمیت دارد، بیان کنید.
+
+</div>
+
+<textarea
+id="history"
+class="form-textarea"
+placeholder="توضیحات خود را در صورت تمایل وارد کنید..."
+></textarea>
+
+</div>
+
+</div>
+
+
+<!-- دکمه ارسال -->
+
+<button
+type="submit"
+class="submit-btn"
+>
+
+ثبت اطلاعات و ارسال درخواست
+
+</button>
+
+
+<div
+id="formGeneralError"
+class="error-message"
+style="margin-top:15px;"
+>
+
+لطفاً موارد ضروری فرم را تکمیل نمایید.
+
+</div>
+
+
+</form>
+
+</div>
+
+
+<!-- شعار -->
+
+<div class="slogan">
+
+پیگیری، شفافیت، تعهد
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+/* =========================
+   آکاردئون
+   ========================= */
+
+const questions =
+document.querySelectorAll(".question");
+
+
+questions.forEach(function(question){
+
+    question.addEventListener("click",function(){
+
+        const item =
+        this.parentElement;
+
+        item.classList.toggle("active");
+
+
+        const icon =
+        this.querySelector("span");
+
+
+        if(item.classList.contains("active")){
+
+            icon.textContent="−";
+
+        }else{
+
+            icon.textContent="+";
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   گرفتن گزینه‌ها
+   ========================= */
+
+function getSelectedValues(containerId){
+
+    const container =
+    document.getElementById(containerId);
+
+    if(!container){
+
+        return [];
+
+    }
+
+    return Array.from(
+        container.querySelectorAll(
+            'input[type="checkbox"]:checked'
+        )
+    ).map(function(input){
+
+        return input.value;
+
+    });
+
+}
+
+
+/* =========================
+   گزینه سایر
+   ========================= */
+
+document
+.querySelectorAll('input[data-other]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const target =
+        document.getElementById(
+            this.dataset.other
+        );
+
+        if(this.checked){
+
+            target.classList.add("show");
+
+        }else{
+
+            target.classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   همسر
+   ========================= */
+
+document
+.querySelectorAll('input[name="maritalStatus"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const spouseSection =
+        document.getElementById("spouseSection");
+
+        if(this.value === "متأهل"){
+
+            spouseSection.classList.add("show");
+
+        }else{
+
+            spouseSection.classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   فرزندان
+   ========================= */
+
+document
+.querySelectorAll('input[name="childrenCount"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const section =
+        document.getElementById(
+            "childrenDocumentsSection"
+        );
+
+        if(this.value === "فاقد فرزند"){
+
+            section.classList.remove("show");
+
+            document
+            .querySelectorAll(
+                'input[name="childrenDocuments"]'
+            )
+            .forEach(function(radio){
+
+                radio.checked=false;
+
+            });
+
+        }else{
+
+            section.classList.add("show");
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   پدر
+   ========================= */
+
+document
+.querySelectorAll('input[name="fatherAlive"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const section =
+        document.getElementById("fatherIranSection");
+
+        if(this.value === "بله"){
+
+            section.classList.add("show");
+
+        }else{
+
+            section.classList.remove("show");
+
+            document
+            .getElementById(
+                "fatherDocumentsSection"
+            )
+            .classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+document
+.querySelectorAll('input[name="fatherIran"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const section =
+        document.getElementById(
+            "fatherDocumentsSection"
+        );
+
+        if(this.value === "بله"){
+
+            section.classList.add("show");
+
+        }else{
+
+            section.classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   مادر
+   ========================= */
+
+document
+.querySelectorAll('input[name="motherAlive"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const section =
+        document.getElementById(
+            "motherIranSection"
+        );
+
+        if(this.value === "بله"){
+
+            section.classList.add("show");
+
+        }else{
+
+            section.classList.remove("show");
+
+            document
+            .getElementById(
+                "motherDocumentsSection"
+            )
+            .classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+document
+.querySelectorAll('input[name="motherIran"]')
+.forEach(function(input){
+
+    input.addEventListener("change",function(){
+
+        const section =
+        document.getElementById(
+            "motherDocumentsSection"
+        );
+
+        if(this.value === "بله"){
+
+            section.classList.add("show");
+
+        }else{
+
+            section.classList.remove("show");
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   Radio
+   ========================= */
+
+function getRadioValue(name){
+
+    const selected =
+    document.querySelector(
+        'input[name="' + name + '"]:checked'
+    );
+
+    return selected
+        ? selected.value
+        : "انتخاب نشده";
+
+}
+
+
+/* =========================
+   اعتبارسنجی
+   ========================= */
+
+function validateField(
+    id,
+    errorId
+){
+
+    const field =
+    document.getElementById(id);
+
+    const error =
+    document.getElementById(errorId);
+
+
+    if(!field.value.trim()){
+
+        error.classList.add("show");
+
+        field.focus();
+
+        return false;
+
+    }
+
+
+    error.classList.remove("show");
+
+    return true;
+
+}
+
+
+/* =========================
+   پیام واتساپ
+   ========================= */
+
+function buildWhatsAppMessage(){
+
+    const firstName =
+    document
+    .getElementById("firstName")
+    .value
+    .trim();
+
+
+    const lastName =
+    document
+    .getElementById("lastName")
+    .value
+    .trim();
+
+
+    const age =
+    document
+    .getElementById("age")
+    .value
+    .trim();
+
+
+    const city =
+    document
+    .getElementById("city")
+    .value
+    .trim();
+
+
+    let currentDocs =
+    getSelectedValues(
+        "currentDocuments"
+    );
+
+
+    let previousDocs =
+    getSelectedValues(
+        "previousDocuments"
+    );
+
+
+    const currentOther =
+    document
+    .getElementById("currentOtherText")
+    .value
+    .trim();
+
+
+    const previousOther =
+    document
+    .getElementById("previousOtherText")
+    .value
+    .trim();
+
+
+    if(
+        currentDocs.includes("سایر")
+        &&
+        currentOther
+    ){
+
+        currentDocs[
+            currentDocs.indexOf("سایر")
+        ] =
+        "سایر: " + currentOther;
+
+    }
+
+
+    if(
+        previousDocs.includes("سایر")
+        &&
+        previousOther
+    ){
+
+        previousDocs[
+            previousDocs.indexOf("سایر")
+        ] =
+        "سایر: " + previousOther;
+
+    }
+
+
+    const marital =
+    getRadioValue(
+        "maritalStatus"
+    );
+
+
+    const childrenCount =
+    getRadioValue(
+        "childrenCount"
+    );
+
+
+    const childrenDocuments =
+    childrenCount === "فاقد فرزند"
+        ? "فرزندی وجود ندارد"
+        : getRadioValue("childrenDocuments");
+
+
+    const fatherAlive =
+    getRadioValue(
+        "fatherAlive"
+    );
+
+
+    const fatherIran =
+    fatherAlive === "بله"
+        ? getRadioValue("fatherIran")
+        : "در قید حیات نیست";
+
+
+    let fatherDocs =
+    getSelectedValues(
+        "fatherDocuments"
+    );
+
+
+    const fatherOther =
+    document
+    .getElementById("fatherOtherText")
+    .value
+    .trim();
+
+
+    if(
+        fatherDocs.includes("سایر")
+        &&
+        fatherOther
+    ){
+
+        fatherDocs[
+            fatherDocs.indexOf("سایر")
+        ] =
+        "سایر: " + fatherOther;
+
+    }
+
+
+    const motherAlive =
+    getRadioValue(
+        "motherAlive"
+    );
+
+
+    const motherIran =
+    motherAlive === "بله"
+        ? getRadioValue("motherIran")
+        : "در قید حیات نیست";
+
+
+    let motherDocs =
+    getSelectedValues(
+        "motherDocuments"
+    );
+
+
+    const motherOther =
+    document
+    .getElementById("motherOtherText")
+    .value
+    .trim();
+
+
+    if(
+        motherDocs.includes("سایر")
+        &&
+        motherOther
+    ){
+
+        motherDocs[
+            motherDocs.indexOf("سایر")
+        ] =
+        "سایر: " + motherOther;
+
+    }
+
+
+    let spouseDocs =
+    getSelectedValues(
+        "spouseDocuments"
+    );
+
+
+    const spouseOther =
+    document
+    .getElementById("spouseOtherText")
+    .value
+    .trim();
+
+
+    if(
+        spouseDocs.includes("سایر")
+        &&
+        spouseOther
+    ){
+
+        spouseDocs[
+            spouseDocs.indexOf("سایر")
+        ] =
+        "سایر: " + spouseOther;
+
+    }
+
+
+    const history =
+    document
+    .getElementById("history")
+    .value
+    .trim();
+
+
+    let message =
+`📋 درخواست بررسی شرایط دریافت شناسنامه
+
+سلام و احترام
+
+اینجانب ${firstName} ${lastName}، ${age} ساله و ساکن شهر ${city}، جهت بررسی شرایط خود برای تشکیل و پیگیری پرونده دریافت شناسنامه، اطلاعات زیر را ارائه می‌نمایم:
+
+👤 مشخصات فردی
+• نام: ${firstName}
+• نام خانوادگی: ${lastName}
+• سن: ${age} سال
+• محل سکونت: ${city}
+
+📑 مدارک هویتی فعلی
+${currentDocs.length ? currentDocs.map(item => "• " + item).join("\n") : "• موردی انتخاب نشده است"}
+
+🗂️ مدارک هویتی سابق
+${previousDocs.length ? previousDocs.map(item => "• " + item).join("\n") : "• موردی انتخاب نشده است"}
+
+💍 وضعیت تأهل
+• ${marital}`;
+
+
+    if(marital === "متأهل"){
+
+        message += `
+
+👥 مدارک هویتی همسر
+${spouseDocs.length ? spouseDocs.map(item => "• " + item).join("\n") : "• موردی انتخاب نشده است"}`;
+
+    }
+
+
+    message += `
+
+👨‍👩‍👧‍👦 وضعیت فرزندان
+• تعداد فرزندان: ${childrenCount}
+• برای دریافت مدارک هویتی فرزندان اقدام شده است: ${childrenDocuments}
+
+👨 وضعیت پدر
+• در قید حیات: ${fatherAlive}
+• ساکن ایران: ${fatherIran}`;
+
+
+    if(
+        fatherAlive === "بله"
+        &&
+        fatherIran === "بله"
+    ){
+
+        message += `
+
+• مدارک هویتی:
+${fatherDocs.length ? fatherDocs.map(item => "• " + item).join("\n") : "• موردی انتخاب نشده است"}`;
+
+    }
+
+
+    message += `
+
+👩 وضعیت مادر
+• در قید حیات: ${motherAlive}
+• ساکن ایران: ${motherIran}`;
+
+
+    if(
+        motherAlive === "بله"
+        &&
+        motherIran === "بله"
+    ){
+
+        message += `
+
+• مدارک هویتی:
+${motherDocs.length ? motherDocs.map(item => "• " + item).join("\n") : "• موردی انتخاب نشده است"}`;
+
+    }
+
+
+    message += `
+
+📝 توضیحات تکمیلی
+${history || "توضیحی توسط متقاضی ثبت نشده است."}
+
+خواهشمندم شرایط اینجانب را بر اساس اطلاعات ارائه‌شده، جهت امکان پذیرش و پیگیری قانونی پرونده بررسی فرمایید.
+
+با احترام
+${firstName} ${lastName}`;
+
+
+    return message;
+
+}
+
+
+/* =========================
+   ارسال فرم
+   ========================= */
+
+document
+.getElementById("applicationForm")
+.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        let valid=true;
+
+
+        if(
+            !validateField(
+                "firstName",
+                "firstNameError"
+            )
+        ){
+
+            valid=false;
+
+        }
+
+
+        if(
+            !validateField(
+                "lastName",
+                "lastNameError"
+            )
+        ){
+
+            valid=false;
+
+        }
+
+
+        if(
+            !validateField(
+                "age",
+                "ageError"
+            )
+        ){
+
+            valid=false;
+
+        }
+
+
+        if(
+            !validateField(
+                "city",
+                "cityError"
+            )
+        ){
+
+            valid=false;
+
+        }
+
+
+        const marital =
+        document.querySelector(
+            'input[name="maritalStatus"]:checked'
+        );
+
+
+        if(!marital){
+
+            valid=false;
+
+        }
+
+
+        const childrenCount =
+        document.querySelector(
+            'input[name="childrenCount"]:checked'
+        );
+
+
+        if(!childrenCount){
+
+            valid=false;
+
+        }
+
+
+        /*
+         * اگر فرد فاقد فرزند باشد،
+         * سوال مدارک فرزندان اصلاً الزامی نیست.
+         */
+
+        if(
+            childrenCount
+            &&
+            childrenCount.value !== "فاقد فرزند"
+        ){
+
+            const childrenDocuments =
+            document.querySelector(
+                'input[name="childrenDocuments"]:checked'
+            );
+
+
+            if(!childrenDocuments){
+
+                valid=false;
+
+            }
+
+        }
+
+
+        const fatherAlive =
+        document.querySelector(
+            'input[name="fatherAlive"]:checked'
+        );
+
+
+        if(!fatherAlive){
+
+            valid=false;
+
+        }
+
+
+        const motherAlive =
+        document.querySelector(
+            'input[name="motherAlive"]:checked'
+        );
+
+
+        if(!motherAlive){
+
+            valid=false;
+
+        }
+
+
+        const currentDocs =
+        getSelectedValues(
+            "currentDocuments"
+        );
+
+
+        if(currentDocs.length === 0){
+
+            valid=false;
+
+        }
+
+
+        const generalError =
+        document.getElementById(
+            "formGeneralError"
+        );
+
+
+        if(!valid){
+
+            generalError.classList.add("show");
+
+            generalError.scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
+
+            return;
+
+        }
+
+
+        generalError.classList.remove("show");
+
+
+        const message =
+        buildWhatsAppMessage();
+
+
+        const whatsappNumber =
+        "989304047332";
+
+
+        const whatsappURL =
+        "https://wa.me/"
+        +
+        whatsappNumber
+        +
+        "?text="
+        +
+        encodeURIComponent(message);
+
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+    }
+);
+
+</script>
+
+</body>
+
+  </html>
