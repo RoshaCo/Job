@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>راهنمای جامع اقامت و کاری ترکیه | روشا</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   رنگ‌بندی اصلی — قرمز الهام‌گرفته از ترکیه
+   ========================================================= */
+
+:root{
+
+    --red-dark:#8f1018;
+    --red-main:#c8102e;
+    --red-medium:#d52b43;
+    --red-light:#e97887;
+
+    --red-very-light:#fff5f6;
+    --red-soft:#fdf0f2;
+
+    --cream:#fff9f9;
+    --cream-light:#fffdfd;
+    --cream-card:#ffffff;
+
+    --text-dark:#321c20;
+    --text-medium:#6d5055;
+
+    --border:#ead1d5;
+
+}
+
+
+/* =========================================================
+   پایه
+   ========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    direction:rtl;
+
+    font-family:'Vazirmatn',Tahoma,sans-serif;
+
+    background:
+    radial-gradient(
+        circle at 10% 10%,
+        rgba(200,16,46,.035),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 90% 30%,
+        rgba(200,16,46,.025),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #fffdfd 0%,
+        #fff7f8 48%,
+        #fffafa 100%
+    );
+
+    color:var(--text-dark);
+
+    line-height:2.15;
+
+    font-size:18px;
+
+}
+
+
+/* =========================================================
+   کانتینر
+   ========================================================= */
+
+.container{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:22px 15px 55px;
+
+}
+
+
+/* =========================================================
+   عنوان اصلی
+   ========================================================= */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:28px;
+
+}
+
+.hero h1{
+
+    font-size:2.35rem;
+
+    font-weight:700;
+
+    color:var(--red-dark);
+
+    margin-bottom:14px;
+
+    line-height:1.7;
+
+}
+
+.hero p{
+
+    font-size:1.3rem;
+
+    color:var(--text-medium);
+
+    line-height:2;
+
+}
+
+
+/* =========================================================
+   کارت برند
+   ========================================================= */
+
+.brand-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:140px;
+
+    margin:30px auto;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(143,16,24,.97),
+        rgba(200,16,46,.94)
+    );
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    box-shadow:
+    0 18px 45px rgba(143,16,24,.20),
+    inset 0 0 25px rgba(255,255,255,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    position:relative;
+
+    color:white;
+
+}
+
+.brand-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150%;
+
+    height:60px;
+
+    top:0;
+
+    left:-25%;
+
+    background:rgba(255,255,255,.12);
+
+    transform:rotate(-10deg);
+
+}
+
+.brand-main{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:2.15rem;
+
+    font-weight:700;
+
+    opacity:0;
+
+    animation:brandText 1.5s ease forwards;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    max-width:90%;
+
+}
+
+@keyframes brandText{
+
+    0%{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   کادرهای هشدار
+   ========================================================= */
+
+.warning{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,242,244,.96),
+        rgba(255,249,250,.98)
+    );
+
+    border:1px solid #e9c5ca;
+
+    border-right:5px solid var(--red-main);
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin:27px 0;
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    line-height:2.25;
+
+    box-shadow:
+    0 8px 22px rgba(200,16,46,.045);
+
+}
+
+.warning-icon{
+
+    font-size:2rem;
+
+    flex-shrink:0;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================================
+   بخش‌های محتوایی
+   ========================================================= */
+
+.section{
+
+    background:rgba(255,255,255,.94);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-top:27px;
+
+    box-shadow:
+    0 12px 30px rgba(120,30,45,.06);
+
+    border:1px solid rgba(200,16,46,.10);
+
+}
+
+.section h2{
+
+    color:var(--red-dark);
+
+    font-size:1.7rem;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+    position:relative;
+
+    padding-right:15px;
+
+}
+
+.section h2::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:10%;
+
+    width:5px;
+
+    height:80%;
+
+    border-radius:10px;
+
+    background:var(--red-main);
+
+}
+
+.content-text{
+
+    color:#38252a;
+
+    font-size:1.2rem;
+
+    line-height:2.5;
+
+    text-align:right;
+
+}
+
+.content-text h3{
+
+    color:var(--red-dark);
+
+    font-size:1.35rem;
+
+    margin:30px 0 14px;
+
+    font-weight:700;
+
+    line-height:2;
+
+}
+
+
+/* =========================================================
+   آکاردئون
+   ========================================================= */
+
+.accordion{
+
+    margin-top:28px;
+
+}
+
+.item{
+
+    background:rgba(255,255,255,.97);
+
+    border-radius:22px;
+
+    margin-bottom:17px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(200,16,46,.13);
+
+    box-shadow:
+    0 7px 18px rgba(120,30,45,.045);
+
+    transition:.25s ease;
+
+}
+
+.item.active{
+
+    border-color:rgba(200,16,46,.28);
+
+    box-shadow:
+    0 10px 25px rgba(200,16,46,.08);
+
+}
+
+.question{
+
+    padding:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    gap:15px;
+
+    line-height:2;
+
+    transition:.2s ease;
+
+}
+
+.question:hover{
+
+    background:#fff7f8;
+
+}
+
+.question span{
+
+    color:white;
+
+    background:var(--red-main);
+
+    width:34px;
+
+    height:34px;
+
+    min-width:34px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.55rem;
+
+    line-height:1;
+
+    box-shadow:
+    0 5px 12px rgba(200,16,46,.20);
+
+}
+
+.answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    padding:0 22px;
+
+    transition:.45s ease;
+
+    font-size:1.2rem;
+
+    line-height:2.6;
+
+    color:#403034;
+
+}
+
+.item.active .answer{
+
+    max-height:15000px;
+
+    padding:0 22px 25px;
+
+}
+
+
+/* =========================================================
+   علامت ابتدای پاسخ
+   ========================================================= */
+
+.answer p::first-letter{
+
+    color:var(--red-main);
+
+}
+
+
+/* =========================================================
+   فرم
+   ========================================================= */
+
+.form-wrapper{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,.97);
+
+    border-radius:30px;
+
+    padding:28px;
+
+    box-shadow:
+    0 15px 40px rgba(120,30,45,.08);
+
+    border:1px solid #ead1d5;
+
+}
+
+.form-title{
+
+    text-align:center;
+
+    color:var(--red-dark);
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    line-height:2;
+
+}
+
+.form-description{
+
+    text-align:center;
+
+    color:var(--text-medium);
+
+    font-size:1.15rem;
+
+    margin-bottom:28px;
+
+    line-height:2.2;
+
+}
+
+.form-section{
+
+    margin-top:30px;
+
+    padding-top:24px;
+
+    border-top:1px solid #f0dfe2;
+
+}
+
+.form-section:first-of-type{
+
+    border-top:none;
+
+    margin-top:0;
+
+}
+
+.form-section-title{
+
+    color:var(--red-dark);
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    line-height:2;
+
+}
+
+.form-group{
+
+    margin-bottom:23px;
+
+}
+
+.form-label{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    font-size:1.12rem;
+
+    font-weight:600;
+
+    color:var(--text-dark);
+
+    line-height:2;
+
+}
+
+.required{
+
+    color:var(--red-main);
+
+}
+
+.form-input,
+.form-textarea{
+
+    width:100%;
+
+    border:1px solid #dfc8cd;
+
+    background:#fffdfd;
+
+    border-radius:14px;
+
+    padding:15px 15px;
+
+    font-family:inherit;
+
+    font-size:1.12rem;
+
+    color:var(--text-dark);
+
+    outline:none;
+
+    transition:.2s ease;
+
+}
+
+.form-input:focus,
+.form-textarea:focus{
+
+    border-color:var(--red-main);
+
+    box-shadow:
+    0 0 0 3px rgba(200,16,46,.10);
+
+}
+
+.form-textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+    line-height:2.3;
+
+    font-size:1.15rem;
+
+}
+
+.help-text{
+
+    font-size:1.12rem;
+
+    color:#766066;
+
+    margin-top:8px;
+
+    line-height:2.2;
+
+}
+
+
+/* =========================================================
+   گزینه‌ها
+   ========================================================= */
+
+.options-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.option-label{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    border:1px solid #e4d1d5;
+
+    background:#fffdfd;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    transition:.2s ease;
+
+    font-size:1.05rem;
+
+    color:var(--text-dark);
+
+    line-height:1.9;
+
+}
+
+.option-label:hover{
+
+    border-color:var(--red-light);
+
+    background:#fff6f7;
+
+}
+
+.option-label input{
+
+    position:absolute;
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+.custom-check{
+
+    width:23px;
+
+    height:23px;
+
+    border:2px solid #c9aeb4;
+
+    border-radius:6px;
+
+    flex-shrink:0;
+
+    position:relative;
+
+    background:white;
+
+}
+
+.option-label.radio .custom-check{
+
+    border-radius:50%;
+
+}
+
+.option-label input:checked + .custom-check{
+
+    background:var(--red-main);
+
+    border-color:var(--red-main);
+
+}
+
+.option-label input:checked + .custom-check::after{
+
+    content:"✓";
+
+    position:absolute;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-55%);
+
+}
+
+.option-label.radio input:checked + .custom-check::after{
+
+    content:"";
+
+    width:9px;
+
+    height:9px;
+
+    border-radius:50%;
+
+    background:white;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+
+/* =========================================================
+   فیلدهای پویا
+   ========================================================= */
+
+.dynamic-field{
+
+    display:none;
+
+    margin-top:13px;
+
+}
+
+.dynamic-field.show{
+
+    display:block;
+
+}
+
+
+/* =========================================================
+   خطا
+   ========================================================= */
+
+.error-message{
+
+    display:none;
+
+    color:#8b1e2d;
+
+    background:#fff0f2;
+
+    border:1px solid #ecc7cd;
+
+    border-radius:12px;
+
+    padding:12px 13px;
+
+    margin-top:9px;
+
+    font-size:1rem;
+
+    line-height:2;
+
+}
+
+.error-message.show{
+
+    display:block;
+
+}
+
+
+/* =========================================================
+   دکمه ارسال واتساپی
+   ========================================================= */
+
+.submit-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#c8102e;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:17px;
+
+    font-family:inherit;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:27px;
+
+    box-shadow:
+    0 10px 25px rgba(200,16,46,.22);
+
+    transition:.2s ease;
+
+    line-height:2;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-1px);
+
+    background:#a90e27;
+
+}
+
+
+/* =========================================================
+   شعار پایانی
+   ========================================================= */
+
+.slogan{
+
+    width:max-content;
+
+    max-width:95%;
+
+    white-space:nowrap;
+
+    margin:38px auto;
+
+    padding:14px 28px;
+
+    border-radius:20px;
+
+    background:rgba(200,16,46,.07);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(200,16,46,.20);
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+    color:var(--red-dark);
+
+}
+
+
+/* =========================================================
+   موبایل
+   ========================================================= */
+
+@media(max-width:600px){
+
+    body{
+
+        font-size:17px;
+
+    }
+
+    .container{
+
+        padding:17px 12px 42px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+        line-height:1.8;
+
+    }
+
+    .hero p{
+
+        font-size:1.15rem;
+
+    }
+
+    .brand-card{
+
+        min-height:135px;
+
+    }
+
+    .brand-main{
+
+        font-size:1.9rem;
+
+        line-height:1.9;
+
+    }
+
+    .warning{
+
+        font-size:1.18rem;
+
+        line-height:2.35;
+
+        padding:18px;
+
+    }
+
+    .warning-icon{
+
+        font-size:1.8rem;
+
+    }
+
+    .section{
+
+        padding:20px;
+
+    }
+
+    .section h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .content-text{
+
+        font-size:1.13rem;
+
+        line-height:2.55;
+
+    }
+
+    .content-text h3{
+
+        font-size:1.27rem;
+
+    }
+
+    .question{
+
+        font-size:1.2rem;
+
+        padding:20px 17px;
+
+        line-height:2.15;
+
+    }
+
+    .question span{
+
+        width:32px;
+
+        height:32px;
+
+        min-width:32px;
+
+        font-size:1.4rem;
+
+    }
+
+    .answer{
+
+        font-size:1.13rem;
+
+        line-height:2.55;
+
+        padding:0 17px;
+
+    }
+
+    .item.active .answer{
+
+        padding:0 17px 22px;
+
+    }
+
+    .options-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .option-label{
+
+        font-size:1.02rem;
+
+        padding:14px;
+
+    }
+
+    .form-wrapper{
+
+        padding:19px;
+
+    }
+
+    .form-title{
+
+        font-size:1.48rem;
+
+    }
+
+    .form-description{
+
+        font-size:1.08rem;
+
+    }
+
+    .form-section-title{
+
+        font-size:1.23rem;
+
+    }
+
+    .form-label{
+
+        font-size:1.08rem;
+
+    }
+
+    .form-input,
+    .form-textarea{
+
+        font-size:1.08rem;
+
+    }
+
+    .help-text{
+
+        font-size:1.1rem;
+
+        line-height:2.3;
+
+    }
+
+    .form-textarea{
+
+        font-size:1.1rem;
+
+    }
+
+    .submit-btn{
+
+        font-size:1.13rem;
+
+    }
+
+    .slogan{
+
+        font-size:1.2rem;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+<!-- =========================================================
+     عنوان
+     ========================================================= -->
+
+<div class="hero">
+
+<h1>
+راهنمای جامع اقامت و کاری ترکیه
+</h1>
+
+<p>
+شرایط و ضوابط + مراحل کار + ارتباط با ما
+</p>
+
+</div>
+
+
+<!-- =========================================================
+     کارت برند
+     ========================================================= -->
+
+<div class="brand-card">
+
+<div class="brand-main">
+
+آینده<br>
+از یک تصمیم شروع می‌شود
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     هشدار اول
+     ========================================================= -->
+
+<div class="warning">
+
+<div class="warning-icon">
+⚠️
+</div>
+
+<div>
+
+اگر فرآیند ما به دریافت مجوز کار و شروع اشتغال شما در ترکیه منجر نشود، هزینه‌ای از شما دریافت نمی‌شود.
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     اطلاعیه مهم
+     ========================================================= -->
+
+<section class="section">
+
+<h2>
+🇹🇷 یک فرصت واقعی برای کار در ترکیه
+</h2>
+
+<div class="content-text">
+
+<p>
+اگر قصد داری برای کار به ترکیه بروی، شاید این همان فرصتی باشد که باید جدی‌اش بگیری.
+</p>
+
+<br>
+
+<p>
+در حال حاضر کارفرما در ترکیه به نیروی کار نیاز دارد و ما می‌توانیم افرادی را که قصد کار در ترکیه دارند، به این فرصت‌های شغلی معرفی کنیم.
+</p>
+
+<br>
+
+<p>
+خدمات ما تنها به معرفی کارفرما محدود نمی‌شود یعنی قرار نیست فقط یک آگهی به تو نشان بدهیم و بگوییم «خودت برو دنبال کار»؛ هدف این است که نیروی کار و کارفرمای واقعی را مستقیماً به یکدیگر برسانیم.
+</p>
+
+<br>
+
+<p>
+ممکن است آماده‌شدن مدارک و انجام مراحل قانونی زمان ببرد، اما فرصت شغلی از همین حالا وجود دارد و می‌توانی فرآیند خودت را شروع کنی تا پس از تکمیل مراحل، برای کار به ترکیه بروی.
+</p>
+
+<br>
+
+<p>
+اگر دنبال کار در ترکیه هستی، ادامه این صفحه را بخوان تا ببینی این فرصت شامل چه شرایطی است و از کجا باید شروع کنی.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     سوالات متداول
+     ========================================================= -->
+
+<div class="accordion">
+
+
+<!-- سوال ۱ -->
+
+<div class="item">
+
+<div class="question">
+
+مسیرهای قانونی ورود به ترکیه چیست؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🔴 ترکیه برای ورود اتباع خارجی، متناسب با هدف سفر و شرایط فرد، مسیرهای قانونی متفاوتی در نظر گرفته است.
+از میان این مسیرها، موارد زیر بیشترین کاربرد را دارند:
+</p>
+
+<br>
+
+<p>
+01 | سفر توریستی<br>
+برای سفر و اقامت کوتاه‌مدت، مطابق مقررات مربوط به هر تابعیت.
+</p>
+
+<br>
+
+<p>
+02 | سفر تجاری<br>
+برای جلسات، مذاکرات و فعالیت‌های تجاری مجاز.
+</p>
+
+<br>
+
+<p>
+03 | تحصیل و آموزش<br>
+برای دانشگاه، دوره‌های آموزشی و برخی برنامه‌های تخصصی.
+</p>
+
+<br>
+
+<p>
+04 | کار و اشتغال ⭐<br>
+برای افرادی که قصد اشتغال قانونی در ترکیه را دارند و باید فرآیند مجوز کار را طی کنند.
+</p>
+
+<br>
+
+<p>
+05 | درمان<br>
+برای دریافت خدمات پزشکی و درمانی در ترکیه.
+</p>
+
+<br>
+
+<p>
+06 | پیوستن به خانواده<br>
+برای افرادی که واجد شرایط قانونی الحاق به اعضای خانواده هستند.
+</p>
+
+<br>
+
+<p>
+سایر مسیرهای قانونی
+</p>
+
+<br>
+
+<p>
+علاوه بر مسیرهای اصلی بالا، روش‌های تخصصی‌تری نیز وجود دارد که بسته به شرایط فرد قابل استفاده است؛ از جمله کارآموزی، فعالیت‌های علمی و پژوهشی، فعالیت‌های هنری و ورزشی، روزنامه‌نگاری، فیلم‌برداری و مستندسازی، باستان‌شناسی، فعالیت‌های دریایی و حمل‌ونقل، نمایندگی توراپراتورها، برخی فعالیت‌های مناطق آزاد و ورود با گذرنامه‌های رسمی یا دیپلماتیک.
+</p>
+
+<br>
+
+<p>
+اگر هدف شما اشتغال و کسب درآمد در ترکیه است، مسیر «کار و اشتغال» مهم‌ترین گزینه برای بررسی شرایط شماست.
+</p>
+
+<br>
+
+<p>
+«توجه: شرایط و مدارک هر مسیر بر اساس تابعیت، هدف سفر و وضعیت متقاضی می‌تواند متفاوت باشد.»
+</p>
+
+</div>
+
+</div>
+
+
+<!-- سوال ۲ -->
+
+<div class="item">
+
+<div class="question">
+
+اقامت کاری ترکیه برای شهروند ایرانی و اتفاع افغانستانی را چگونه انجام می‌دهید؟
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+<p>
+🔴 اگر قصد دارید به‌صورت قانونی برای کار به ترکیه بروید و ما بتوانیم متناسب با شرایط شما یک کارفرمای مناسب معرفی کنیم، روند کلی به این شکل است:
+</p>
+
+<br>
+
+<p>
+🇮🇷 برای شهروندان ایرانی
+</p>
+
+<br>
+
+<p>
+۱. بررسی شرایط شما<br>
+اطلاعات، سابقه کاری و توانمندی‌های شما بررسی می‌شود.
+</p>
+
+<br>
+
+<p>
+۲. معرفی فرصت شغلی<br>
+در صورت تناسب، فرصت کاری و اطلاعات مربوط به کارفرما در اختیار شما قرار می‌گیرد.
+</p>
+
+<br>
+
+<p>
+۳. تأیید کارفرما و شرایط همکاری<br>
+در صورت توافق طرفین، اطلاعات و مدارک لازم برای شروع فرآیند آماده می‌شود.
+</p>
+
+<br>
+
+<p>
+۴. آماده‌سازی مدارک<br>
+پاسپورت، مدارک هویتی، مدارک شغلی و سایر مدارک موردنیاز آماده می‌شود.
+</p>
+
+<br>
+
+<p>
+۵. مراجعه به نمایندگی ترکیه<br>
+متقاضی برای درخواست ویزای کار و مجوز کار به نمایندگی مربوط مراجعه می‌کند. برای درخواست اولیه، پاسپورت، فرم درخواست و نامه کارفرما از مدارک اصلی هستند.
+</p>
+
+<br>
+
+<p>
+۶. اقدام کارفرما در ترکیه<br>
+پس از درخواست متقاضی، کارفرما مدارک مربوط به پرونده را از طریق سامانه وزارت کار ترکیه ارائه می‌کند.
+</p>
+
+<br>
+
+<p>
+۷. بررسی پرونده<br>
+پرونده توسط مراجع مربوط در ترکیه بررسی می‌شود.
+</p>
+
+<br>
+
+<p>
+۸. صدور مجوز کار و ویزا<br>
+در صورت تأیید، مجوز کار صادر شده و فرآیند ویزای کار تکمیل می‌شود.
+</p>
+
+<br>
+
+<p>
+۹. ورود به ترکیه و شروع کار<br>
+پس از دریافت مجوزهای لازم، متقاضی می‌تواند مطابق شرایط مجوز خود وارد ترکیه شده و اشتغال قانونی را آغاز کند.
+</p>
+
+<br>
+
+<p>
+🇦🇫 اگر تبعه افغانستان هستید
+</p>
+
+<br>
+
+<p>
+اصل مسیر مشابه شهروندان ایرانی است؛ یعنی ابتدا شرایط شما بررسی و در صورت تناسب، کارفرما معرفی می‌شود و سپس فرآیند رسمی ویزای کار و مجوز کار طی خواهد شد.
+</p>
+
+<br>
+
+<p>
+تفاوت اصلی در این است که باید پاسپورت افغانستان، مدارک هویتی و مدارک موردنیاز متناسب با تابعیت خود را آماده داشته باشید و درخواست را از مسیر نمایندگی ترکیه که صلاحیت رسیدگی به پرونده شما را دارد، پیگیری کنید. وزارت خارجه ترکیه نیز برای درخواست ویزای کار، مراجعه به نمایندگی ترکیه در کشور محل اقامت یا تابعیت را پیش‌بینی کرده است.
+</p>
+
+<br>
+
+<p>
+مراحل برای اتباع نیز به‌طور خلاصه:
+</p>
+
+<br>
+
+<p>
+۱. بررسی شرایط و سابقه کاری<br>
+۲. معرفی فرصت شغلی مناسب<br>
+۳. تأیید شرایط همکاری با کارفرما<br>
+۴. آماده‌سازی پاسپورت و مدارک<br>
+۵. درخواست ویزای کار و مجوز کار<br>
+۶. اقدام کارفرما در ترکیه<br>
+۷. بررسی پرونده توسط مراجع مربوط<br>
+۸. دریافت مجوز و ویزای کار<br>
+۹. ورود قانونی به ترکیه<br>
+۱۰. آغاز اشتغال طبق شرایط مجوز
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- =========================================================
+     هشدار دوم
+     ========================================================= -->
+
+<div class="warning">
+
+<div class="warning-icon">
+⚠️
+</div>
+
+<div>
+
+اگر مطالب ذکر شده در این راهنما را به‌طور کامل مطالعه نموده‌اید، لطفاً ابتدا فیلترشکن خود را روشن نموده و سپس فرم زیر را جهت درخواست بررسی شرایط خود تکمیل کنید. پس از ثبت فرم، با یک پیام آماده وارد واتساپ می‌شوید و کافی است دکمه ارسال را در واتساپ بزنید.
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     فرم
+     ========================================================= -->
+
+<div class="form-wrapper">
+
+<div class="form-title">
+فرم بررسی شرایط دریافت شناسنامه
+</div>
+
+<div class="form-description">
+لطفاً اطلاعات زیر را برای بررسی اولیه با دقت تکمیل کنید.
+</div>
+
+
+<form id="applicationForm" novalidate>
+
+
+<!-- =====================================================
+     اطلاعات فردی
+     ===================================================== -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۱. اطلاعات فردی
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+نام <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="firstName"
+class="form-input"
+placeholder="نام خود را وارد کنید"
+required
+>
+
+<div id="firstNameError"
+class="error-message">
+
+لطفاً نام خود را وارد کنید.
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+نام خانوادگی <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="lastName"
+class="form-input"
+placeholder="نام خانوادگی خود را وارد کنید"
+required
+>
+
+<div id="lastNameError"
+class="error-message">
+
+لطفاً نام خانوادگی خود را وارد کنید.
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+سن <span class="required">*</span>
+</label>
+
+<input
+type="number"
+id="age"
+class="form-input"
+min="1"
+max="120"
+placeholder="سن"
+required
+>
+
+<div id="ageError"
+class="error-message">
+
+لطفاً سن خود را وارد کنید.
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+محل سکونت <span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="city"
+class="form-input"
+placeholder="نام شهر"
+required
+>
+
+<div id="cityError"
+class="error-message">
+
+لطفاً شهر محل سکونت را وارد کنید.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     مدارک هویتی
+     ===================================================== -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۲. مدارک هویتی
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+
+مدرک یا مدارک هویتی فعلی شما چیست؟
+
+<span class="required">*</span>
+
+</label>
+
+
+<div class="options-grid"
+id="currentDocuments">
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="کارت آمایش"
+>
+
+<span class="custom-check"></span>
+
+کارت آمایش
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="اقامتی"
+>
+
+<span class="custom-check"></span>
+
+اقامتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="وضعیتی"
+>
+
+<span class="custom-check"></span>
+
+وضعیتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سرشماری"
+>
+
+<span class="custom-check"></span>
+
+سرشماری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="تذکره الکترونیک"
+>
+
+<span class="custom-check"></span>
+
+تذکره الکترونیک
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پاسپورت با انگشت‌نگاری"
+>
+
+<span class="custom-check"></span>
+
+پاسپورت با انگشت‌نگاری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پاسپورت بدون انگشت‌نگاری"
+>
+
+<span class="custom-check"></span>
+
+پاسپورت بدون انگشت‌نگاری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="فاقد مدارک هویتی"
+>
+
+<span class="custom-check"></span>
+
+فاقد مدارک هویتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پناهنده (سازمان ملل)"
+>
+
+<span class="custom-check"></span>
+
+پناهنده (سازمان ملل)
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سایر"
+data-other="currentOther"
+>
+
+<span class="custom-check"></span>
+
+سایر
+
+</label>
+
+</div>
+
+
+<div id="currentOther"
+class="dynamic-field">
+
+<input
+type="text"
+id="currentOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+
+در گذشته چه مدارک هویتی داشته‌اید که در حال حاضر باطل یا فاقد اعتبار شده‌اند؟
+
+</label>
+
+
+<div class="options-grid"
+id="previousDocuments">
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="کارت آمایش"
+>
+
+<span class="custom-check"></span>
+
+کارت آمایش
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="اقامتی"
+>
+
+<span class="custom-check"></span>
+
+اقامتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="وضعیتی"
+>
+
+<span class="custom-check"></span>
+
+وضعیتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سرشماری"
+>
+
+<span class="custom-check"></span>
+
+سرشماری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="تذکره الکترونیک"
+>
+
+<span class="custom-check"></span>
+
+تذکره الکترونیک
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پاسپورت با انگشت‌نگاری"
+>
+
+<span class="custom-check"></span>
+
+پاسپورت با انگشت‌نگاری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پاسپورت بدون انگشت‌نگاری"
+>
+
+<span class="custom-check"></span>
+
+پاسپورت بدون انگشت‌نگاری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="فاقد مدارک هویتی"
+>
+
+<span class="custom-check"></span>
+
+فاقد مدارک هویتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پناهنده (سازمان ملل)"
+>
+
+<span class="custom-check"></span>
+
+پناهنده (سازمان ملل)
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سایر"
+data-other="previousOther"
+>
+
+<span class="custom-check"></span>
+
+سایر
+
+</label>
+
+</div>
+
+
+<div id="previousOther"
+class="dynamic-field">
+
+<input
+type="text"
+id="previousOtherText"
+class="form-input"
+placeholder="لطفاً مدرک دیگر را توضیح دهید"
+>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     وضعیت تأهل
+     ===================================================== -->
+
+<div class="form-section">
+
+<div class="form-section-title">
+۳. وضعیت تأهل و خانواده
+</div>
+
+
+<div class="form-group">
+
+<label class="form-label">
+
+وضعیت تأهل شما چیست؟
+
+<span class="required">*</span>
+
+</label>
+
+
+<div class="options-grid">
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="maritalStatus"
+value="مجرد"
+required
+>
+
+<span class="custom-check"></span>
+
+مجرد
+
+</label>
+
+
+<label class="option-label radio">
+
+<input
+type="radio"
+name="maritalStatus"
+value="متأهل"
+>
+
+<span class="custom-check"></span>
+
+متأهل
+
+</label>
+
+</div>
+
+</div>
+
+
+<div id="spouseSection"
+class="dynamic-field">
+
+<div class="form-group">
+
+<label class="form-label">
+
+مدارک هویتی همسر خود را انتخاب کنید.
+
+</label>
+
+
+<div class="options-grid"
+id="spouseDocuments">
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="کارت آمایش"
+>
+
+<span class="custom-check"></span>
+
+کارت آمایش
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="اقامتی"
+>
+
+<span class="custom-check"></span>
+
+اقامتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="وضعیتی"
+>
+
+<span class="custom-check"></span>
+
+وضعیتی
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="سرشماری"
+>
+
+<span class="custom-check"></span>
+
+سرشماری
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="تذکره الکترونیک"
+>
+
+<span class="custom-check"></span>
+
+تذکره الکترونیک
+
+</label>
+
+
+<label class="option-label">
+
+<input
+type="checkbox"
+value="پاسپورت با انگشت‌نگاری"
+>
+
+<span class="custom-check"></span>
