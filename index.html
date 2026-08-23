@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>کار در ترکیه یا عراق</title>
+    <meta name="description" content="کار در ترکیه یا عراق">
+    
+    <!-- فونت وزیرمتن -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.50);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 480px;
+            padding: 60px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .country-circle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            box-shadow: 
+                0 15px 35px rgba(0,0,0,0.45),
+                0 4px 10px rgba(0,0,0,0.30),
+                inset 0 -15px 30px rgba(0,0,0,0.25),
+                inset 0 10px 20px rgba(255,255,255,0.25);
+        }
+
+        .country-circle::before {
+            content: '';
+            position: absolute;
+            top: 8%;
+            right: 15%;
+            width: 50%;
+            height: 35%;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.30);
+            filter: blur(6px);
+            pointer-events: none;
+        }
+
+        .country-circle::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            bottom: -2px;
+            left: -2px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255,255,255,0.25);
+            pointer-events: none;
+        }
+
+        .country-circle:hover {
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 
+                0 20px 45px rgba(0,0,0,0.55),
+                0 6px 15px rgba(0,0,0,0.35),
+                inset 0 -15px 30px rgba(0,0,0,0.25),
+                inset 0 10px 20px rgba(255,255,255,0.30);
+        }
+
+        .country-circle:active {
+            transform: scale(0.95);
+            box-shadow: 
+                0 8px 20px rgba(0,0,0,0.40),
+                inset 0 -10px 20px rgba(0,0,0,0.30),
+                inset 0 8px 15px rgba(255,255,255,0.15);
+        }
+
+        .turkey-circle {
+            background: radial-gradient(
+                circle at 35% 30%,
+                #FF4B55 0%,
+                #E30A17 40%,
+                #C00814 70%,
+                #8B0000 100%
+            );
+        }
+
+        .iraq-circle {
+            background: radial-gradient(
+                circle at 35% 30%,
+                #00B85A 0%,
+                #007A3D 40%,
+                #005C2E 70%,
+                #003D1F 100%
+            );
+        }
+
+        .country-icon {
+            font-size: 38px;
+            line-height: 1;
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+        }
+
+        .country-en {
+            font-size: 14px;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+            margin-bottom: 2px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+        }
+
+        .country-fa {
+            font-size: 13px;
+            font-weight: 700;
+            color: #FFFFFF;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+        }
+
+        @media (max-width: 400px) {
+            .country-circle {
+                width: 100px;
+                height: 100px;
+            }
+            .country-icon {
+                font-size: 32px;
+            }
+            .country-en {
+                font-size: 13px;
+            }
+            .country-fa {
+                font-size: 12px;
+            }
+            .container {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ترکیه — بالا -->
+        <a href="turkey.html" class="country-circle turkey-circle" id="turkeyLink">
+            <span class="country-icon">🇹🇷</span>
+            <span class="country-en">TURKEY</span>
+            <span class="country-fa">ترکیه</span>
+        </a>
+        
+        <!-- عراق — پایین -->
+        <a href="iraq.html" class="country-circle iraq-circle" id="iraqLink">
+            <span class="country-icon">🇮🇶</span>
+            <span class="country-en">IRAQ</span>
+            <span class="country-fa">عراق</span>
+        </a>
+        
+    </div>
+
+    <script>
+        // ============ آرایه بک‌گراندها ============
+        const backgrounds = [
+            'bg1.png',
+            'bg2.png',
+            'bg3.png',
+            'bg4.png',
+            'bg5.png',
+            'bg6.png',
+            'bg7.png',
+            'bg8.png',
+            'bg9.png',
+            'bg10.png'
+        ];
+
+        const validBackgrounds = backgrounds.filter(bg => bg.trim() !== '');
+
+        // ============ انتخاب رندوم بک‌گراند ============
+        function getRandomBackground() {
+            const savedBg = sessionStorage.getItem('selectedBackground');
+            
+            if (savedBg) {
+                return savedBg;
+            }
+            
+            const randomIndex = Math.floor(Math.random() * validBackgrounds.length);
+            const selected = validBackgrounds[randomIndex];
+            
+            sessionStorage.setItem('selectedBackground', selected);
+            
+            return selected;
+        }
+
+        function applyBackground() {
+            const bg = getRandomBackground();
+            document.body.style.backgroundImage = `url('${bg}')`;
+        }
+
+        applyBackground();
+
+        // ============ رفتن به صفحات ============
+        document.getElementById('turkeyLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            history.replaceState(null, '', 'turkey.html');
+            window.location.href = 'turkey.html';
+        });
+
+        document.getElementById('iraqLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            history.replaceState(null, '', 'iraq.html');
+            window.location.href = 'iraq.html';
+        });
+
+        // ============ رفتار Back ============
+        history.pushState(null, '', window.location.href);
+
+        window.addEventListener('popstate', function() {
+            window.close();
+            
+            setTimeout(function() {
+                window.location.replace('about:blank');
+            }, 200);
+        });
+    </script>
+
+</body>
+  </html>
